@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnAction = findViewById(R.id.btn_action);
         text_display = findViewById(R.id.text_view_display);
 
-        text_display.setOnClickListener(v -> {
+        btnAction.setOnClickListener(v -> {
             try {
                 int x = Integer.parseInt(value_x.getText().toString().trim());
                 int y = Integer.parseInt(value_y.getText().toString().trim());
