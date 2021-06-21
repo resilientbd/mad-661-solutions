@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="products">
+        <item>CNG (43tk/unit)</item>
+        <item>LPG (45tk/unit)</item>
+        <item>Octane (89tk/unit)</item>
+        <item>Petrol (80tk/unit)</item>
+    </string-array>
+</resources>
