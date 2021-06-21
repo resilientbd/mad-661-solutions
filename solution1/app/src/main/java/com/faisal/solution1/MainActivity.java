@@ -11,9 +11,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static final String LOG = "check_value";
     private EditText value_x;
-private EditText value_y;
-private Button btnAction;
-private TextView text_display;
+    private EditText value_y;
+    private Button btnAction;
+    private TextView text_display;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,14 +25,13 @@ private TextView text_display;
         text_display = findViewById(R.id.text_view_display);
 
         text_display.setOnClickListener(v -> {
-            try{
+            try {
                 int x = Integer.parseInt(value_x.getText().toString().trim());
                 int y = Integer.parseInt(value_y.getText().toString().trim());
-                double result = Math.pow(x,y);
-                text_display.setText(""+result);
-            }catch (Exception e)
-            {
-                Log.e(LOG,"exception:"+e.getMessage());
+                double result = Math.pow(x, y);
+                text_display.setText("" + result);
+            } catch (Exception e) {
+                Log.e(LOG, "exception:" + e.getMessage());
             }
 
         });
